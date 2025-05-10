@@ -27,4 +27,8 @@ export class LoginPage {
     async resetLink(): Promise<void> {
         await this.page.click("//button[normalize-space(text())='Email Password Reset Link']");
     }
+
+    async clickEyepass(): Promise<void> {
+        await this.page.click("//i[contains(@class,'toggle-password fa')]");
+    }
 }

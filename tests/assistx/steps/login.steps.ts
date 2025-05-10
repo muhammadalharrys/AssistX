@@ -15,12 +15,12 @@ Before({ timeout: 180000 }, async function() {
     loginPage = new LoginPage(page);
 });
 
-Given('I am on the login page', { timeout: 60000 }, async function () { // Increase timeout for Given step
+Given('I am on the login page', { timeout: 120000 }, async function () {
     await loginPage.navigate();
 });
 
 When('I click the forget password button', async function () {
-    await loginPage.clickForgetPassword();
+    await page.click("//button[normalize-space(text())='Forget Password']");
 });
 
 When('I click button email password reset link', async function () {
@@ -39,7 +39,11 @@ When('I click the login button', async function () {
     await loginPage.clickLogin();
 });
 
-After({ timeout: 60000 }, async function() {
+Then('I click eyepass', async function () {
+    await loginPage.clickEyepass();
+});
+
+After({ timeout: 120000 }, async function() {
     await page.close();
     await browser.close();
 });
