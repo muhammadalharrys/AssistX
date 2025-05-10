@@ -9,11 +9,11 @@ export class LoginPage {
     }
 
     async enterEmail(email: string): Promise<void> {
-        await this.page.fill('//input[@type="email"]', email); // Directly using XPath
+        await this.page.fill('//input[@type="email"]', email);
     }
 
     async enterPassword(password: string): Promise<void> {
-        await this.page.fill('#password', password); // Directly using CSS selector
+        await this.page.fill('#password', password);
     }
 
     async clickLogin(): Promise<void> {

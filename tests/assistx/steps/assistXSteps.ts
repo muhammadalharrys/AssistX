@@ -1,6 +1,6 @@
 import { Given, When, Then, Before, After } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
+import { LoginPage } from '../pages/assistXPages';
 import { chromium, Page, Browser } from '@playwright/test';
 
 let page: Page;

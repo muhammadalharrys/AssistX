@@ -1,9 +1,8 @@
 # Automation AssistX
 
-End-to-end testing automation project using:
-- Playwright
-- Cucumber (Gherkin)
-- TypeScript
+Hi Assist X Enterprise Team,
+
+Below is the end-to-end automation testing project I have developed using Playwright, Cucumber (Gherkin), and TypeScript. I hope this demonstrates my potential as a strong candidate to join Assist X Enterprise. Here are the steps to run the tests:
 
 ## Project Structure
 ```tests/assistx```
@@ -13,7 +12,10 @@ End-to-end testing automation project using:
 
 ## Getting Started
 1. Install dependencies
-```npm install```
+```bash
+npm install
+```
 
 2. Run tests
 ```npm test```
+```npm test tests/assistx/features/assistX.feature```
